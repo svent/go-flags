@@ -1,7 +1,16 @@
 go-flags: a go library for parsing command line arguments
 =========================================================
 
-[![GoDoc](https://godoc.org/github.com/jessevdk/go-flags?status.png)](https://godoc.org/github.com/jessevdk/go-flags) [![Build Status](https://travis-ci.org/jessevdk/go-flags.svg?branch=master)](https://travis-ci.org/jessevdk/go-flags) [![Coverage Status](https://img.shields.io/coveralls/jessevdk/go-flags.svg)](https://coveralls.io/r/jessevdk/go-flags?branch=master)
+Changes in this fork:
+---------------------
+This fork removes the special handling of option formats on windows, i.e.
+options are always in the format '--longopt' (the original go-flags package
+uses '/longopt' on windows).
+
+This might be interesting if you want to provide a consistent experience
+using a tool across platforms instead of using the preferred option format
+for each specific operating system.
+
 
 This library provides similar functionality to the builtin flag library of
 go, but provides much more functionality and nicer formatting. From the
