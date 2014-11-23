@@ -1,6 +1,3 @@
-go-flags: a go library for parsing command line arguments
-=========================================================
-
 Changes in this fork:
 ---------------------
 This fork removes the special handling of option formats on windows, i.e.
@@ -11,6 +8,8 @@ This might be interesting if you want to provide a consistent experience
 using a tool across platforms instead of using the preferred option format
 for each specific operating system.
 
+go-flags: a go library for parsing command line arguments
+=========================================================
 
 This library provides similar functionality to the builtin flag library of
 go, but provides much more functionality and nicer formatting. From the
