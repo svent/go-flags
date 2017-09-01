@@ -5,7 +5,7 @@ import (
 	"io"
 )
 
-// IniError contains location information on where an error occured.
+// IniError contains location information on where an error occurred.
 type IniError struct {
 	// The error message.
 	Message string
